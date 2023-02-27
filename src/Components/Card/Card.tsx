@@ -15,13 +15,7 @@ export default ({ title, isComplete, onComplete, remove, index }: IProps) => {
       >
         title: {title}
       </p>
-      <p
-        onClick={() => {
-          onComplete(index);
-        }}
-      >
-        Is completed: {isComplete + ""}
-      </p>
+      <p>Is completed: {isComplete + ""}</p>
       <button
         onClick={() => {
           remove(index);
